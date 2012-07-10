@@ -25,7 +25,6 @@ public class UserStatus{
 	private JPanel panel;
 	private JLabel idLabel;
 	private JTextField nameField;
-//	private JTextField orgField;
 	private JTextField placeField;
 
 	public UserStatus(int id){	
@@ -48,11 +47,7 @@ public class UserStatus{
 		nameField = new JTextField("John Doe");
 		nameField.setFont(new Font("ＭＳ ゴシック", Font.PLAIN, FONT_SIZE));
 		nameField.setBorder(new LineBorder(Color.blue, 2));
-		
-//		orgField = new JTextField("none");
-//		orgField.setFont(new Font("ＭＳ ゴシック", Font.PLAIN, FONT_SIZE));
-//		orgField.setBorder(new LineBorder(Color.blue, 2));
-		
+				
 		placeField = new JTextField("Anywhere");
 		placeField.setFont(new Font("ＭＳ ゴシック", Font.PLAIN, FONT_SIZE));
 		placeField.setBorder(new LineBorder(Color.blue, 2));
@@ -60,7 +55,6 @@ public class UserStatus{
 		idPanel.add(idLabel);
 
 		infoPanel.add(nameField);
-//		infoPanel.add(orgField);
 		infoPanel.add(placeField);
 		
 		panel.add(idPanel);
@@ -81,13 +75,6 @@ public class UserStatus{
 	public String getName(){
 		return nameField.getText();
 	}
-
-//	public void setOrg(String org){
-//		orgField.setText(org);
-//	}
-//	public String getOrg(){
-//		return orgField.getText();
-//	}
 
 	public void setPlace(String place){
 		placeField.setText(place);
