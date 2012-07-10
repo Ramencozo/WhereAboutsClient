@@ -50,7 +50,7 @@ public class MainWindow extends JFrame{
 		container.add(panel);
 		
 		manager = new WebSocketManager();
-		manager.connect("ws://192.168.1.4:38400/echo", new WebSocketEventHandler() {
+		manager.connect("ws://サーバURL:ポート/echo", new WebSocketEventHandler() {
 			@Override
 			public void onOpen() {
 				System.out.println("---onOpen()---");
